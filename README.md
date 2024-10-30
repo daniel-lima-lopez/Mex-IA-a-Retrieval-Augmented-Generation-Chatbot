@@ -1,7 +1,7 @@
 # MexIA: chatbot basado en RAG
 En este repositorio se muestra el proceso de procesamiento de información y la implementación del sistema MexIA. El objetivo de este proyecto es diseñar un chatbot basado en RAG (Retrieval Augmented Generation) para contestar consultas de carácter legal, considerando la información contenida en la constitución Mexicana.
 
-El reporte completo de este proyecto se encuentra en el archivo [Reporte MexIA.pdf](Reporte MexIA.pdf).
+El reporte completo de este proyecto se encuentra en el archivo [Reporte_MexIA.pdf](Reporte_MexIA.pdf).
 
 
 ## Instalación
@@ -14,6 +14,8 @@ También es necesario instalar Llama Index ([ver mas detalles](https://docs.llam
 Una vez obtenida la key, es necesario crear un archivo nombrado `openai_key.text` y guardar la key en el.
 
 ## Implementación del modelo Mex-IA
+Previo a la implementación del modelo, se realizó una etapa de procesamiento de datos, en la cual se extrajo la información de todos los artículos de la constitución Mexicana. Además, se realizó una transformación a una representación numérica a través de embeddings, y se guardó dicha representación para su futura consulta en la implementación del modelo propuesto. El procesamiento completo se encuentra en el archivo [Preprocesamiento.ipynb](Preprocesamiento.ipynb).
+
 La implementación del modelo considera los siguientes puntos:
 1. Definición del modelo de lenguaje y tipo de embedding a usar.
 2. Recuperación de la representación vectorial de la información de los artículos de la constitución Mexicana.
